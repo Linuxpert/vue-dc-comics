@@ -4,7 +4,7 @@
       <nav>
           <ul>
               <li v-for="link, i in links" :key="i">
-                  <a :href="link.url" :class="link.here ? 'active' : '' ">{{link.text}}</a>
+                  <a :href="link.urls" :class="link.here ? 'active' : '' ">{{link.text}}</a>
               </li>
           </ul>
       </nav>
@@ -95,6 +95,7 @@ export default {
                 }
                 &:hover{
                     color: blue;
+                    cursor: pointer;
                 }
             }
         }
