@@ -1,46 +1,10 @@
 <template>
   <header>
-      <img src="../assets/img/dc-logo.png" alt="">
+      <img src="assets/img/dc-logo.png" alt="">
       <nav>
           <ul>
-              <li>
-                  <a href="#">CHARACTERS</a>
-              </li>
-
-              <li>
-                  <a href="#" class="active"> COMICS</a>
-              </li>
-
-              <li>
-                  <a href="#">MOVIES</a>
-              </li>
-
-              <li>
-                  <a href="#">TV</a>
-              </li>
-
-              <li>
-                  <a href="#">GAMES</a>
-              </li>
-
-              <li>
-                  <a href="#">COLLECTIBLES</a>
-              </li>
-
-              <li>
-                  <a href="#">VIDEOS</a>
-              </li>
-
-              <li>
-                  <a href="#">FANS</a>
-              </li>
-
-              <li>
-                  <a href="#">NEWS</a>
-              </li>
-
-              <li>
-                  <a href="#">SHOP</a>
+              <li v-for="link, i in links" :key="i">
+                  <a :href="link.url" :class="link.here ? 'active' : '' ">{{link.text}}</a>
               </li>
           </ul>
       </nav>
@@ -50,7 +14,62 @@
 <script>
 export default {
   name: 'Header',
-  
+  data() {
+      return {
+          links: [
+              {
+                  text: "CHARACTERS",
+                  urls: "#",
+                  here: false,
+              },
+              {
+                  text: "COMICS",
+                  urls: "#",
+                  here: true,
+              },
+              {
+                  text: "MOVIES",
+                  urls: "#",
+                  here: false,
+              },
+              {
+                  text: "TV",
+                  urls: "#",
+                  here: false,
+              },
+              {
+                  text: "GAMES",
+                  urls: "#",
+                  here: false,
+              },
+              {
+                  text: "COLLECTIBLES",
+                  urls: "#",
+                  here: false,
+              },
+              {
+                  text: "VIDEOS",
+                  urls: "#",
+                  here: false,
+              },
+              {
+                  text: "FANS",
+                  urls: "#",
+                  here: false,
+              },
+              {
+                  text: "NEWS",
+                  urls: "#",
+                  here: false,
+              },
+              {
+                  text: "SHOP",
+                  urls: "#",
+                  here: false,
+              },
+          ]
+      }
+  }
 }
 </script>
 
