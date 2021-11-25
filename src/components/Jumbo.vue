@@ -15,7 +15,6 @@ export default {
     .jumbo{
         background-image: url("../../public/assets/img/jumbotron.jpg");
         background-size: cover;
-        width: 100%;
         height: 400px;
     }
 </style>
