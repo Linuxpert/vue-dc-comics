@@ -4,7 +4,7 @@
     <div class="comics">
       <Comics v-for="comic, i in comicsInfo" :key="i" :details="comic"/>
     </div>
-    
+    <button>LOAD MORE</button>
   </main>
 </template>
 
@@ -111,10 +111,18 @@ main {
     margin-left: 10%;
   }
   .comics{
+    width: 60% auto;
     margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
-    width: 80% auto;
+  }
+  button{
+    padding: 10px;
+    background-color: rgb(0, 70, 199);
+    color: #fff;
+    font-size: 15px;
+    width: 10%;
+    margin-bottom: 20px;
   }
 }
 </style>

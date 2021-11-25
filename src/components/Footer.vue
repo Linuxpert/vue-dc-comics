@@ -227,6 +227,10 @@ export default {
             a{
                 text-decoration: none;
                 color: grey;
+                &:hover{
+                    color: white;
+                    cursor: pointer;
+                }
             }
             img{
                 margin: 0 150px;
