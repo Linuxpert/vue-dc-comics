@@ -1,14 +1,16 @@
 <template>
   <main>
-
-    <h1>--> Content goes here</h1>
-
+    <Jumbo/>
   </main>
 </template>
 
 <script>
+import Jumbo from '@/components/Jumbo.vue'
 export default {
   name: "Content",
+  components: {
+    Jumbo
+  }
 };
 </script>
 
@@ -16,8 +18,8 @@ export default {
 <style scoped lang="scss">
 main {
 
-    background-color: #000;
-    height: 150px;
+    background-color: rgb(63, 63, 63);
+    // height: 150px;
     display: flex;
     align-items: center;
     margin-top: 10px;
