@@ -36,12 +36,17 @@
           </div>
           
       </div>
+        <MyFooterSocial/>
   </footer>
 </template>
 
 <script>
+import MyFooterSocial from '@/components/MyFooterSocial.vue'
 export default {
   name: "Footer",
+  components: {
+    MyFooterSocial
+  },
   data(){
       return{
           infos: [
