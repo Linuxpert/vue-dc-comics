@@ -111,7 +111,8 @@ main {
     margin-left: 10%;
   }
   .comics{
-    width: 60% auto;
+    width: 70%;
+    margin: 0 auto;
     margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
